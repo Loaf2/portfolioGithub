@@ -4,7 +4,10 @@ import Header from "./Header";
 import Introduction from "./Introduction";
 import Aboutme from "./Aboutme";
 import Skills from "./Skills";
-import Projects from './Projects'
+import Projects from "./Projects";
+import Contacts from "./Contacts";
+import Footer from "./Footer";
+
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
@@ -21,14 +24,19 @@ function App() {
             <span className="relative top-20 font-[Oswald]">02.</span>
             <Aboutme />
           </div>
-          <div className="effect px-52 bg-[#FCFFEB] -z-10 border-t-[5px] border-t-[#000000]">
+          <div className="effect2 px-52 bg-[#FCFFEB] -z-10 border-t-[5px] border-t-[#000000]">
             <span className="relative top-20 font-[Oswald]">03.</span>
             <Skills />
           </div>
-          <div className="effect px-52 bg-[#FECDAA] -z-10 border-t-[5px] border-t-[#000000]">
+          <div className="effect2 px-52 bg-[#FECDAA] -z-10 border-t-[5px] border-t-[#000000]">
             <span className="relative top-20 font-[Oswald]">04.</span>
             <Projects />
           </div>
+          <div className="effect2 px-52 bg-[#F8FFF4] -z-10 border-t-[5px] border-t-[#000000]">
+            <span className="relative top-20 font-[Oswald]">05.</span>
+            <Contacts />
+          </div>
+          <Footer />
         </div>
       </div>
     </div>

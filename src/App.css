@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.effect, .effect2 {
+    z-index: -20;
+}
+
 .effect {
     height: 80vh;
+}
+
+.effect2 {
+    height: 100vh;
 }
 
 .tag {
@@ -11,6 +19,9 @@
     font-family: 'Oswald';
     font-size: 3.25rem;
     padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .underline_tag {
@@ -20,11 +31,20 @@
 .projects {
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(3, 250px);
-    grid-template-rows: repeat(3, 180px);
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: repeat(3, 300px);
     gap: 10px;
 }
 
 .item {
     background-color: #474350;
+    object-fit: cover;
+    width: 500px;
+    height: 300px;
+    transition: 200ms all ease-in;
+    z-index: 20;
+}
+
+.item:hover {
+    opacity: 0;
 }
